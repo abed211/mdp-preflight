@@ -1,21 +1,50 @@
 # MDP Preflight
 
-**A free, evidence-first readiness audit for AI-coded projects.**
+![MDP Preflight — Prove your AI-coded project is ready](social-preview.jpg)
 
-Before asking an AI coding agent to add another feature, make it prove that it understands the product it is changing.
+**Your AI finished the screens. Did it finish the system?**
 
-MDP Preflight is a compact, read-only audit for repositories being built or maintained with Codex, Claude Code, Cursor, Copilot, Gemini CLI, Windsurf, or another coding agent. It finds the gaps that polished screens often hide: disconnected flows, missing business rules, weak authorization, fake persistence, unsafe data paths, untested integrations, and release claims without evidence.
+[![Release](https://img.shields.io/github/v/release/abed211/mdp-preflight?style=flat-square&color=2457ff)](https://github.com/abed211/mdp-preflight/releases/latest)
+[![Free audit](https://img.shields.io/badge/audit-free-12a594?style=flat-square)](MDP-PREFLIGHT.md)
+[![Read only](https://img.shields.io/badge/default-read--only-6b7280?style=flat-square)](MDP-PREFLIGHT.md)
 
-It does **not** rewrite your project, install dependencies, expose secrets, or claim that a repository is safe because it looks complete.
+MDP Preflight is a free, evidence-first readiness audit for repositories built with Codex, Claude Code, Cursor, Copilot, Gemini CLI, Windsurf, and other coding agents. It exposes what polished interfaces often hide: disconnected flows, missing business rules, client-only authorization, fake persistence, unsafe data paths, untested integrations, and release claims without proof.
 
-## Run It in Minutes
+It does **not** rewrite your project, install dependencies, expose secrets, or confuse plausible-looking code with working software.
+
+## Try It in 60 Seconds
+
+Open your repository in a coding agent and paste this:
+
+```text
+Read https://raw.githubusercontent.com/abed211/mdp-preflight/main/MDP-PREFLIGHT.md
+and run MDP Preflight against this repository in AUDIT ONLY mode.
+Do not change files. Support every score with repository or executable evidence.
+Return the compact report defined by the audit.
+```
+
+Prefer a local file? Download the [latest release](https://github.com/abed211/mdp-preflight/releases/latest), place `MDP-PREFLIGHT.md` at your repository root, and use the same request.
+
+## What Changes After the Audit
+
+| Before | After |
+|---|---|
+| “The project looks finished.” | Every readiness claim is tied to evidence. |
+| Screens are reviewed in isolation. | One critical journey is traced across UI, API, data, and services. |
+| Missing tests are treated as uncertainty. | Unverified claims are marked `NOT VERIFIED`, never silently passed. |
+| A total score hides serious risks. | Confirmed security and data-integrity blockers override the score. |
+| The next step is “keep coding.” | You receive release blockers and the next three engineering actions. |
+
+See the [three-application delivery-platform report](SAMPLE-REPORT.md) for a realistic example.
+
+## Run It Manually
 
 1. Open your project in your coding agent.
 2. Copy the complete contents of [`MDP-PREFLIGHT.md`](MDP-PREFLIGHT.md) into the agent, or place the file at the repository root and ask the agent to run it.
 3. Keep the run in `AUDIT ONLY` mode.
 4. Review the evidence, score, release blockers, and next three actions.
 
-Recommended request:
+Recommended local request:
 
 ```text
 Run MDP Preflight against this repository in AUDIT ONLY mode.
@@ -40,7 +69,7 @@ MDP Preflight scores ten areas from 0 to 5:
 
 The result is a score out of 50, but the number is not the decision. A confirmed critical security issue, client-only authorization, exposed secret, fake test result, disconnected production flow, or unrecoverable data risk remains a blocker regardless of the total.
 
-See [`SAMPLE-REPORT.md`](SAMPLE-REPORT.md) for an example based on a three-application delivery platform.
+The audit is intentionally diagnostic: it shows what is proven, what is broken, and what remains unknown before more code is added.
 
 ## Why the Audit Is Deliberately Small
 
@@ -64,7 +93,7 @@ MDP Enterprise is a buyer-specific repository protocol for teams that want a cod
 
 **Get Miracoulia Developer Protocol — Enterprise Edition:**
 
-https://miracoulia.lahza.store/products/miracoulia-developer-protocol
+[Explore Miracoulia Developer Protocol — Enterprise Edition](https://miracoulia.lahza.store/products/miracoulia-developer-protocol?utm_source=github&utm_medium=repository&utm_campaign=mdp_preflight_v1)
 
 ## Honest Limits
 
